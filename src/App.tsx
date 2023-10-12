@@ -15,7 +15,8 @@ const App: React.FC = () => {
       <Header />
       <Content />
       <Footer />
-      
+      {/* <ProjectRoutes /> */}
+
     </div>
   )
 }
