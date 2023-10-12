@@ -1,11 +1,14 @@
 import React from "react";
 
+// css
+import '../css/header.css'
+
 
 const Header: React.FC = () => {
 
 
     return (
-        <div className="headers">
+        <div className="header">
             Header
         </div>
     )

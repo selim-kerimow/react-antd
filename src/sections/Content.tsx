@@ -1,5 +1,8 @@
 import React from "react";
 
+// css
+import '../css/content.css'
+
 
 const Content: React.FC = () => {
 
