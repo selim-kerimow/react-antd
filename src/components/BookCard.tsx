@@ -16,23 +16,26 @@ const BookCard: React.FC<BookCardProps> = ({ price, title }) => {
 
 
     return (
-        <Card
-        hoverable
-        style={{ width: 230 }}
-        cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-        bodyStyle={{ fontSize: '0.7rem', padding: '5px', lineHeight: 0.6}}
-        >
-        <div className='bookcard-body'>
-            <h2> {price} TMT</h2>
-            <Button danger style={{fontSize: '1rem'}}>
-                <BsCart4 size={17}/>
-                Cart
-            </Button>
-        </div>
         <div>
-            <h2> {title} </h2>
+            <Card
+            hoverable
+            className='bookcard-main'
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            bodyStyle={{ fontSize: '0.7rem', padding: '5px', lineHeight: 0.6}}
+            >
+            <div className='bookcard-body'>
+                <h2> {price} TMT</h2>
+                <Button danger style={{fontSize: '1rem'}}>
+                    <BsCart4 size={17}/>
+                    Cart
+                </Button>
+            </div>
+            <div>
+                <h2> {title} </h2>
+            </div>
+        </Card>            
         </div>
-    </Card>
+
     )
 }
 

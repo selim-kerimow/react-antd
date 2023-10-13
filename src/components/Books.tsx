@@ -1,4 +1,4 @@
-import { List} from 'antd'
+import { Flex, List} from 'antd'
 
 // css
 import '../css/books.css'
@@ -7,23 +7,25 @@ import '../css/books.css'
 import BookCard from './BookCard';
 
 const data = [
-    {price: 170.00, title: 'book'}
+    {price: 170.00, title: 'book'},
+    {price: 170.00, title: 'book'},
+    {price: 170.00, title: 'book'},
+    {price: 170.00, title: 'book'},
+    {price: 170.00, title: 'book'},
+    {price: 170.00, title: 'book'},
 ]
 
 const Books: React.FC = () => {
 
 
     return (
-        <List
-            grid={{ gutter: 16, column: 4 }}
-            className='book-list'
-            dataSource={data}
-            renderItem={(item) => (
-            <List.Item>
-                <BookCard price={item.price} title={item.title} />
-            </List.Item>
-            )}
-        />
+        <div className='book-list'>
+            <div className='book-inner'>
+                { data?.map(item => 
+                    <BookCard title={item.title} price={item.price} />
+                    )}                
+            </div>
+        </div>
     )
 }
 
