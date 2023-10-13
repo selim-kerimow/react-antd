@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 // css
@@ -7,12 +7,9 @@ import '../css/header.css'
 // Ant Design
 import { Menu, MenuProps } from 'antd'
 
-// react-icons
-import { ImHome3 } from 'react-icons/im'
-
 
 const items: MenuProps['items'] = [
-    {key: '', icon: <ImHome3 size={22}/>},
+    {key: '', label: 'Homepage'},
     {key: 'books', label: 'Books', children: [
         {label: 'Biography', key: 'books/biography'},
         {label: 'Romance', key: 'books/romance'},
@@ -27,8 +24,12 @@ const Header: React.FC = () => {
 
     const navigate = useNavigate()
 
+    // states
+    const [selectedItem, setSelectedItem] = useState('')
+
     // functions
     const menuClick: MenuProps['onClick'] = (item) => {
+        setSelectedItem(item.key)
         navigate(`/${item.key}`)
     }
 
@@ -37,8 +38,9 @@ const Header: React.FC = () => {
             <Menu 
                 items={items} 
                 onClick={menuClick}
+                selectedKeys={[selectedItem]}
                 mode="horizontal"
-                style={{display: 'flex', alignItems: "center", fontSize: '1rem'}}
+                style={{fontSize: '1rem'}}
             />
         </div>
     )
