@@ -5,6 +5,10 @@
     margin-bottom: 30px;
 }
 
+.book-image {
+    width: 100%;
+}
+
 .book-inner {
     display: flex;
     justify-content: center;
@@ -25,6 +29,9 @@
 .bookcard-body h2 {
     color: cornflowerblue;
 }
+.bookcard-title {
+    height: 100%;
+}
 
 /* Responsive design */
 @media screen and (max-width: 595px) {
@@ -36,20 +43,20 @@
     }
 }
 
-@media screen and (max-width: 420px) {
-    .book-list {
-        width: 95%;
-    }
-    .bookcard-main {
-        width: 170px;
-    }
-}
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
     .book-list {
         width: 95%;
     }
     .bookcard-main {
         width: 160px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .book-list {
+        width: 95%;
+    }
+    .bookcard-main {
+        width: 235px;
     }
 }

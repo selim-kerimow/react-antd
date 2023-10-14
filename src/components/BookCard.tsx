@@ -8,10 +8,11 @@ import { BsCart4 } from 'react-icons/bs'
 
 interface BookCardProps {
     price: number,
-    title: string
+    title: string,
+    image: string
 }
 
-const BookCard: React.FC<BookCardProps> = ({ price, title }) => {
+const BookCard: React.FC<BookCardProps> = ({ price, title, image }) => {
 
 
 
@@ -20,8 +21,8 @@ const BookCard: React.FC<BookCardProps> = ({ price, title }) => {
             <Card
             hoverable
             className='bookcard-main'
-            cover={<Image width='100%' src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" />}
-            bodyStyle={{ fontSize: '0.7rem', padding: '5px', lineHeight: 0.6}}
+            cover={<Image className='bookcard-image' src={ image } />}
+            bodyStyle={{ height: 165, fontSize: '0.7rem', padding: '5px', lineHeight: 1.3}}
             >
             <div className='bookcard-body'>
                 <h2> {price} TMT</h2>
@@ -30,7 +31,7 @@ const BookCard: React.FC<BookCardProps> = ({ price, title }) => {
                     Cart
                 </Button>
             </div>
-            <div>
+            <div className='bookcard-title'>
                 <h2> {title} </h2>
             </div>
         </Card>            

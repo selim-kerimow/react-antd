@@ -1,4 +1,4 @@
-
+import { books_data } from '../project_data/books';
 
 // css
 import '../css/books.css'
@@ -6,23 +6,18 @@ import '../css/books.css'
 // components
 import BookCard from './BookCard';
 
-const data = [
-    {price: 170.00, title: 'book'},
-    {price: 170.00, title: 'book'},
-    {price: 170.00, title: 'book'},
-    {price: 170.00, title: 'book'},
-    {price: 170.00, title: 'book'},
-    {price: 170.00, title: 'book'},
-]
-
 const Books: React.FC = () => {
+
+    const booksByCategory = () => {
+        
+    }
 
 
     return (
         <div className='book-list'>
             <div className='book-inner'>
-                { data?.map(item => 
-                    <BookCard title={item.title} price={item.price} />
+                { books_data.biography?.map(item => 
+                    <BookCard title={item.title} price={item.price} image={item.image}/>
                     )}                
             </div>
         </div>
