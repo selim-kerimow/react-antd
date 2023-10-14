@@ -1,4 +1,11 @@
-export const biography = [
+export interface IBook {
+    id: number,
+    title: string,
+    price: number,
+    image: string
+}
+
+export const biography: IBook[] = [
     {id: 1, title: 'Том Хенкс', price: 300.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/xbsbRzO79CCBIOjWdsX2.jpg'},
     {id: 2, title: 'Mark Zuckerberg', price: 100.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/1rVCsG5xPzoXFF18cocX.jpg'},
     {id: 3, title: 'BillGates', price: 100.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/usBMIsRrtvKn3EeTw0NE.jpg'},
