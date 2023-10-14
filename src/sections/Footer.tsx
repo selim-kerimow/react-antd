@@ -9,7 +9,8 @@ const Footer: React.FC = () => {
 
     return (
         <div className="footer">
-            Footer
+            <p>Selim Kerimov</p>
+            <p>Asghabat 2023</p>
         </div>
     )
 }

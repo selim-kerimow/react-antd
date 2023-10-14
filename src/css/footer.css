@@ -1,5 +1,15 @@
 .footer {
     width: 100%;
-    height: 60px;
-    background-color: red;
+    height: 80px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 3px;
+    font-size: 1.2rem;
+    color: white;
 }
