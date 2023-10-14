@@ -1,20 +1,27 @@
 import '../css/books.css'
+import { IBook } from '../project_data/books'
 
 // Ant Design
-import {Card, Button, Image, Badge} from 'antd'
+import {Card, Button, Image, Badge, message} from 'antd'
 
 // react-icons
 import { BsCart4 } from 'react-icons/bs'
+import { useActions } from '../store/hooks'
+
 
 interface BookCardProps {
-    price: number,
-    title: string,
-    image: string
+    book: IBook
 }
 
-const BookCard: React.FC<BookCardProps> = ({ price, title, image }) => {
+const BookCard: React.FC<BookCardProps> = ({ book }) => {
 
+    const { addProduct } = useActions()
 
+    // fuctions
+    const AddToCart = () => {
+        addProduct(book)
+        message.success('Added Successfully!')
+    }
 
     return (
         <div>
@@ -23,18 +30,20 @@ const BookCard: React.FC<BookCardProps> = ({ price, title, image }) => {
                 <Card
                     hoverable
                     className='bookcard-main'
-                    cover={<Image className='bookcard-image' src={ image } />}
+                    cover={<Image className='bookcard-image' src={ book.image } />}
                     bodyStyle={{ height: 165, fontSize: '0.7rem', padding: '5px', lineHeight: 1.3}}
                     >
+
                     <div className='bookcard-body'>
-                        <h2> {price} TMT</h2>
-                        <Button danger style={{fontSize: '1rem'}}>
+                        <h2> {book.price} TMT</h2>
+                        <Button danger style={{fontSize: '1rem'}} onClick={AddToCart}>
                             <BsCart4 size={17}/>
                             Cart
                         </Button>
                     </div>
+
                     <div className='bookcard-title'>
-                        <h2> {title} </h2>
+                        <h2> {book.title} </h2>
                     </div>
                 </Card>
 

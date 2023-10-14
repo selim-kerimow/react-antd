@@ -12,13 +12,14 @@ const Books: React.FC = () => {
 
     const location = useLocation()
 
+    localStorage.removeItem('favorites')
 
     return (
         <div className='book-list'>
             <div className='book-inner'>
 
-                { location.pathname == '/books/biography' && biography?.map(item => 
-                    <BookCard title={item.title} price={item.price} image={item.image} key={item.id}/>
+                { location.pathname == '/books/biography' && biography?.map(book => 
+                    <BookCard book={book} key={book.id}/>
                     )}
 
             </div>

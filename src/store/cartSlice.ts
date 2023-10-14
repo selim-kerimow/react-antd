@@ -3,7 +3,7 @@ import { IBook } from "../project_data/books"
 
 
 const initialState = {
-    cart : JSON.parse( localStorage.getItem('favorites') ?? '[]')
+    cart : JSON.parse( localStorage.getItem('cart') ?? '[]')
 }
 
 export const cartSlice = createSlice({
@@ -12,7 +12,7 @@ export const cartSlice = createSlice({
     reducers: {
         addProduct: (state, action: PayloadAction<IBook>) => {
             state.cart.push(action.payload)
-            localStorage.setItem('favorites', JSON.stringify(state.cart))
+            localStorage.setItem('cart', JSON.stringify(state.cart))
         }
     }
 })
