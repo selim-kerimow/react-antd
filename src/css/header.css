@@ -3,4 +3,81 @@
     height: 60px;
     position: fixed;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+}
+
+.header-title {
+    margin-left: 25px;
+    color: cornflowerblue;
+}
+
+.header-menu {
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.menu-bar {
+    display: none;
+    color: cornflowerblue;
+}
+
+.header-button {
+    font-size: 1rem;
+    margin: 0 25px 0 15px;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .header-title {
+        width: 80%;
+        margin-left: 10px;
+    }
+    .header-menu {
+        display: none;
+        width: auto;
+    }
+    .opened {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 59px;
+        /* gap: 10px; */
+    }
+    .menu-bar {
+        display: flex;
+    }
+    .header-button {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header-title {
+        font-size: 0.8rem;
+    }
+    .header-button {
+        font-size: 0.8rem;
+        height: 30px;
+    }
+    .opened {
+        font-size: 0.75rem;
+        gap: 0;
+    }
 }

@@ -1,12 +1,12 @@
 import '../css/books.css'
 import { IBook } from '../project_data/books'
+import { useActions } from '../store/hooks'
 
 // Ant Design
 import {Card, Button, Image, Badge, message} from 'antd'
 
 // react-icons
 import { BsCart4 } from 'react-icons/bs'
-import { useActions } from '../store/hooks'
 
 
 interface BookCardProps {
@@ -37,7 +37,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
                     <div className='bookcard-body'>
                         <h2> {book.price} TMT</h2>
                         <Button danger style={{fontSize: '1rem'}} onClick={AddToCart}>
-                            <BsCart4 size={17}/>
+                        <BsCart4 size={17} style={{ marginRight: 3}}/>
                             Cart
                         </Button>
                     </div>
