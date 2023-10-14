@@ -1,7 +1,7 @@
 import '../css/books.css'
 
 // Ant Design
-import {Card, Button} from 'antd'
+import {Card, Button, Image} from 'antd'
 
 // react-icons
 import { BsCart4 } from 'react-icons/bs'
@@ -20,7 +20,7 @@ const BookCard: React.FC<BookCardProps> = ({ price, title }) => {
             <Card
             hoverable
             className='bookcard-main'
-            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            cover={<Image width='100%' src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" />}
             bodyStyle={{ fontSize: '0.7rem', padding: '5px', lineHeight: 0.6}}
             >
             <div className='bookcard-body'>
