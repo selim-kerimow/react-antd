@@ -1,8 +1,11 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 import { IBook } from "../project_data/books"
 
+interface ICart {
+    cart: IBook[]
+}
 
-const initialState = {
+const initialState: ICart = {
     cart : JSON.parse( localStorage.getItem('cart') ?? '[]')
 }
 
