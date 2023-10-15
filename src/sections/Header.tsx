@@ -11,6 +11,7 @@ import '../css/header.css'
 
 // Ant Design
 import { Button, Menu, MenuProps } from 'antd'
+import DrawerComponent from "../components/Drawer";
 
 
 const items: MenuProps['items'] = [
@@ -28,6 +29,7 @@ const items: MenuProps['items'] = [
 const Header: React.FC = () => {
 
     const [open, setOpen] = useState(false)
+    const [drawer, setDrawer] = useState(false)
 
     const navigate = useNavigate()
 
@@ -38,6 +40,9 @@ const Header: React.FC = () => {
     const menuClick: MenuProps['onClick'] = (item) => {
         setSelectedItem(item.key)
         navigate(`/${item.key}`)
+    }
+    const drawerHandler = () => {
+        setDrawer(true)
     }
 
     return (
@@ -59,10 +64,12 @@ const Header: React.FC = () => {
                     mode="horizontal"
                 />
                 
-                <Button type="primary" className="header-button">
+                <Button type="primary" className="header-button" onClick={drawerHandler}>
                     <BsCart4 size={15} style={{ marginRight: 3}}/> Cart
                 </Button>                
             </div>
+
+            {drawer && <DrawerComponent drawer={drawer} onClose={() => setDrawer(false)}/>}
 
         </div>
     )
