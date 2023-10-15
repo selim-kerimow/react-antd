@@ -1,8 +1,11 @@
-import { Button, Drawer, Table, Alert, Form, Input, Select } from 'antd';
+// Ant Design
+import { Button, Drawer, Table, Alert, Form, Input, Select, message} from 'antd';
+import { Option } from 'antd/es/mentions';
 import Column from 'antd/es/table/Column';
+
 import { useState } from 'react';
 import { useAppSelector } from '../store/hooks';
-import { Option } from 'antd/es/mentions';
+
 
 interface DrawerComponentProps {
     drawer: boolean,
@@ -22,13 +25,16 @@ const DrawerComponent: React.FC<DrawerComponentProps> = ({ drawer, onClose }) =>
         .reduce((acc: any, value: any) => acc + value, 0)
     const result = getTotalPrice(cart);
 
+    // function after form submit
     const formHandler = ( values: any ) => {
+      message.success('Your order has been added to queue!')
       onClose()
       console.log('Success:', values);
     }
 
   return (
     <>
+
       <Drawer title="Cart" closable={true} open={drawer} onClose={onClose}>
 
         {/* Upper Drawer */}
@@ -49,7 +55,7 @@ const DrawerComponent: React.FC<DrawerComponentProps> = ({ drawer, onClose }) =>
 
             <Form.Item label='Phone Number' name='phone' rules={[{ message: 'Please enter valid phone number!', type: 'number'}]}>
               <Input style={{ width: '25%' }} value="+993" disabled />
-              <Input style={{ width: '75%' }} required max={8} min={8}/>
+              <Input style={{ width: '75%' }} required/>
             </Form.Item>
 
             <Form.Item label="City:" name='city' rules={[{ required: true, message: 'Please select your city!' }]}>
