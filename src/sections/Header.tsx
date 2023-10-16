@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 // react-icons
 import { BsCart4 } from 'react-icons/bs'
@@ -30,6 +30,7 @@ const Header: React.FC = () => {
 
     const [open, setOpen] = useState(false)
     const [drawer, setDrawer] = useState(false)
+    const location = useLocation()
 
     const navigate = useNavigate()
 
@@ -44,6 +45,10 @@ const Header: React.FC = () => {
     const drawerHandler = () => {
         setDrawer(true)
     }
+
+    useEffect(() => {
+        setOpen(false)
+    }, [location])
 
     return (
         <div className="header">
