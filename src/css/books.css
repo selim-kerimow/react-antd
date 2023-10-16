@@ -16,6 +16,9 @@
     gap: 15px;
     width: 100%;
 }
+.bookcard-cart {
+    font-size: 1rem;
+}
 
 /* BookCard */
 .bookcard-main {
@@ -52,11 +55,14 @@
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 370px) {
     .book-list {
         width: 95%;
     }
     .bookcard-main {
-        width: 235px;
+        width: 160px;
+    }
+    .bookcard-body h2 {
+        font-size: 1rem;
     }
 }

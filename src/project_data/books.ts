@@ -24,3 +24,12 @@ export const biography: IBook[] = [
     {id: 16, title: 'Who Was Maye Angelou', price: 45.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/PkWdaZMeBTeGWzDGyela.jpg'},
     {id: 17, title: 'Who Was Jasse Owens', price: 45.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/j96rfye8x5Omp87ybeWu.jpg'},
 ]
+
+export const trending: IBook[] = [
+    {id: 1, title: 'Mark Zuckerberg', price: 100.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/1rVCsG5xPzoXFF18cocX.jpg'},
+    {id: 2, title: 'Richard Brandson', price: 100.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/tVFvjlTbX2Sw0YKnYIS2.jpg'},
+    {id: 3, title: 'Taylor Swift', price: 100.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/Y0PP6ewL1l3Os0rmlVnC.jpg'},
+    {id: 4, title: 'BillGates', price: 100.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/usBMIsRrtvKn3EeTw0NE.jpg'},
+    {id: 15, title: 'Генри Форд: Моя Жизнь Мой Бизнес', price: 160.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/Il36jCOPZK.jpg'},
+    {id: 7, title: 'Greenlights', price: 200.00, image: 'https://gnbookstore.com.tm/storage/sm/pr/gLLlD0eLNbSnOsUCdobj.jpg'},
+]

@@ -19,7 +19,7 @@ const Books: React.FC = () => {
             <div className='book-inner'>
                 
                 { location.pathname == '/books/biography' && biography?.map(book => 
-                    <BookCard book={book} key={book.id}/>
+                    <BookCard book={book} key={book.id} budge='Biography'/>
                     )}
 
             </div>

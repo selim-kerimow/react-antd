@@ -10,10 +10,11 @@ import { BsCart4 } from 'react-icons/bs'
 
 
 interface BookCardProps {
-    book: IBook
+    book: IBook,
+    budge: string
 }
 
-const BookCard: React.FC<BookCardProps> = ({ book }) => {
+const BookCard: React.FC<BookCardProps> = ({ book, budge }) => {
 
     const { addProduct } = useActions()
 
@@ -25,7 +26,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 
     return (
         <div>
-            <Badge.Ribbon text='New'>
+            <Badge.Ribbon text={budge}>
 
                 <Card
                     hoverable
@@ -36,8 +37,8 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 
                     <div className='bookcard-body'>
                         <h2> {book.price} TMT</h2>
-                        <Button danger style={{fontSize: '1rem'}} onClick={AddToCart}>
-                        <BsCart4 size={17} style={{ marginRight: 3}}/>
+                        <Button danger className='bookcard-cart' onClick={AddToCart}>
+                        <BsCart4 size={16} style={{ marginRight: 3}}/>
                             Cart
                         </Button>
                     </div>

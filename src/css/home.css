@@ -1,0 +1,48 @@
+.home {
+    min-height: 100vh;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: cornflowerblue;
+}
+
+.trending-books {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.new-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: cornflowerblue;
+}
+
+.new-books {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 525px) {
+    .home {
+        width: 97%;
+    }
+    .trending-books {
+        gap: 10px;
+    }
+}
