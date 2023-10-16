@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom'
 import '../css/books.css'
 import { IBook } from '../project_data/books'
 import { useActions } from '../store/hooks'
+import { useCookies } from 'react-cookie'
 
 // Ant Design
 import {Card, Button, Image, Badge, message} from 'antd'
@@ -16,12 +18,19 @@ interface BookCardProps {
 
 const BookCard: React.FC<BookCardProps> = ({ book, budge }) => {
 
+    const [_, setCookie, removeCookie] = useCookies()
     const { addProduct } = useActions()
+    const navigate = useNavigate()
 
     // fuctions
     const AddToCart = () => {
         addProduct(book)
         message.success('Added Successfully!')
+    }
+    const cardClickHandler = () => {
+        navigate(`/books/detail/${book.id}`),
+        removeCookie('selectedBook')
+        setCookie('selectedBook', book)
     }
 
     return (
@@ -29,6 +38,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, budge }) => {
             <Badge.Ribbon text={budge}>
 
                 <Card
+                    onClick={cardClickHandler}
                     hoverable
                     className='bookcard-main'
                     cover={<Image className='bookcard-image' src={ book.image } />}

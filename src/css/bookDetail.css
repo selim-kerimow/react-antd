@@ -1,0 +1,46 @@
+.detail {
+    margin: 0 auto;
+    width: 80%;    
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.detail h2 {
+    font-size: 1.85rem;
+}
+
+.detail-content p {
+    color: dodgerblue;
+    font-size: 1.2rem;
+}
+
+.detail-content span {
+    color: rgb(80, 80, 80);
+    font-size: 1.15rem;
+}
+
+.detail-low {
+    font-size: 1.5rem;
+    color: dodgerblue;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+ @media screen and (max-width: 800px) {
+    .detail {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        border-bottom: 2px solid darkgrey;
+        margin-bottom: 10px;
+    }
+    .detail-image {
+        display: flex;
+        justify-content: center;
+    }
+    .detail-description {
+        margin-bottom: 10px;
+    }
+ }
