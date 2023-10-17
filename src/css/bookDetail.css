@@ -27,6 +27,14 @@
     gap: 15px;
     align-items: center;
 }
+.detail-description {
+    width: 80%;
+    font-size: 1.15rem;
+}
+
+.detail-button {
+    font-size: 1.05rem;
+}
 
  @media screen and (max-width: 800px) {
     .detail {
@@ -42,5 +50,6 @@
     }
     .detail-description {
         margin-bottom: 10px;
+        width: 100%;
     }
  }
