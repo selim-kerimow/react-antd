@@ -1,6 +1,6 @@
 import '../css/home.css'
+import { trending } from '../project_data/trending'
 import BookCard from './BookCard'
-import { trending } from '../project_data/books'
 
 
 const Home = () => {

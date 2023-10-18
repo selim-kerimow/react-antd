@@ -1,4 +1,4 @@
-import { biography } from '../project_data/books';
+import { biography } from '../project_data/biography';
 import { useLocation } from 'react-router-dom';
 
 // css
