@@ -36,7 +36,13 @@
     font-size: 1.05rem;
 }
 
- @media screen and (max-width: 800px) {
+@media screen and (max-width: 1350px)  {
+    .detail {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .detail {
         display: flex;
         flex-direction: column;
@@ -52,4 +58,4 @@
         margin-bottom: 10px;
         width: 100%;
     }
- }
+}

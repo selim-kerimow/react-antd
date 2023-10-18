@@ -6,6 +6,7 @@ import '../css/books.css'
 
 // components
 import BookCard from './BookCard';
+import { romance } from '../project_data/romance';
 
 
 const Books: React.FC = () => {
@@ -20,6 +21,10 @@ const Books: React.FC = () => {
                 
                 { location.pathname == '/books/biography' && biography?.map(book => 
                     <BookCard book={book} key={book.id} budge='Biography'/>
+                    )}
+
+                { location.pathname == '/books/romance' && romance?.map(item => 
+                    <BookCard book={item} budge='Romance'/>
                     )}
 
             </div>
