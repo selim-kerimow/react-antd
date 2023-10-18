@@ -31,9 +31,13 @@
 }
 .bookcard-body h2 {
     color: cornflowerblue;
+    position: relative;
 }
 .bookcard-title {
     height: 100%;
+}
+.card-button {
+    position: absolute;
 }
 
 /* Responsive design */

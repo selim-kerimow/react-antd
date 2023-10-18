@@ -23,7 +23,8 @@ const BookCard: React.FC<BookCardProps> = ({ book, budge }) => {
     const navigate = useNavigate()
 
     // fuctions
-    const AddToCart = () => {
+    const AddToCart = (e: React.MouseEvent<HTMLElement>) => {
+        e.stopPropagation()
         addProduct(book)
         message.success('Added Successfully!')
     }
@@ -38,24 +39,27 @@ const BookCard: React.FC<BookCardProps> = ({ book, budge }) => {
             <Badge.Ribbon text={budge}>
 
                 <Card
-                    onClick={cardClickHandler}
                     hoverable
                     className='bookcard-main'
                     cover={<Image className='bookcard-image' src={ book.image } />}
                     bodyStyle={{ height: 165, fontSize: '0.7rem', padding: '5px', lineHeight: 1.3}}
                     >
+                    <div onClick={cardClickHandler} style={{ height: '100%'}}>
+                        <div className='bookcard-body'>
+                            <h2> {book.price} TMT</h2>
+                            <div onClick={AddToCart}>
+                                <Button danger className='bookcard-cart' >
+                                <BsCart4 size={16} style={{ marginRight: 3}}/>
+                                    Cart
+                                </Button>                            
+                            </div>
+                        </div>
 
-                    <div className='bookcard-body'>
-                        <h2> {book.price} TMT</h2>
-                        <Button danger className='bookcard-cart' onClick={AddToCart}>
-                        <BsCart4 size={16} style={{ marginRight: 3}}/>
-                            Cart
-                        </Button>
-                    </div>
+                        <div className='bookcard-title'>
+                            <h2> {book.title} </h2>
+                        </div>                        
+                     </div>
 
-                    <div className='bookcard-title'>
-                        <h2> {book.title} </h2>
-                    </div>
                 </Card>
 
             </Badge.Ribbon>

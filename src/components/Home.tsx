@@ -5,8 +5,6 @@ import BookCard from './BookCard'
 
 const Home = () => {
 
-    localStorage.removeItem('cart')
-
     return (
         <div className="home">
             <div className='home-quote'>
