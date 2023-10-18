@@ -1,4 +1,4 @@
-import { IBook } from "./books";
+import { IBook } from "./IBook";
 
 export const trending: IBook[] = [
     {

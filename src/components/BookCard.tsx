@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import '../css/books.css'
-import { IBook } from '../project_data/books'
+import { IBook } from '../project_data/IBook'
 import { useActions } from '../store/hooks'
 import { useCookies } from 'react-cookie'
 

@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
-import { IBook } from "../project_data/books"
+import { IBook } from "../project_data/IBook"
 
 interface ICart {
     cart: IBook[]

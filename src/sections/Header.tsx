@@ -19,7 +19,7 @@ const items: MenuProps['items'] = [
     {key: 'books', label: 'Books', children: [
         {label: 'Biography', key: 'books/biography'},
         {label: 'Romance', key: 'books/romance'},
-        {label: 'Fantasy', key: 'books/fantacy'},
+        {label: 'Fantasy', key: 'books/fantasy'},
     ]},
     {key: 'magazines', label: 'Magazines'},
     {key: 'gifts', label: 'Gifts'}

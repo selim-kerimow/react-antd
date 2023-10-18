@@ -1,4 +1,4 @@
-import { IBook } from "./books";
+import { IBook } from "./IBook";
 
 export const romance: IBook[] = [
     {
@@ -134,7 +134,7 @@ export const romance: IBook[] = [
         description: "My disease is as rare as it is famous. It’s a form of Severe Combined Immunodeficiency, but basically, I’m allergic to the world. I don’t leave my house, have not left my house in fifteen years. The only people I ever see are my mom and my nurse, Carla. But then one day, a moving truck arrives. New next door neighbors. I look out the window, and I see him. He’s tall, lean and wearing all black—black t-shirt, black jeans, black sneakers and a black knit cap that covers his hair completely. He catches me looking and stares at me. I stare right back. His name is Olly. I want to learn everything about him, and I do. I learn that he is funny and fierce. I learn that his eyes are Atlantic Ocean-blue and that his vice is stealing silverware. I learn that when I talk to him, my whole world opens up, and I feel myself starting to change—starting to want things. To want out of my bubble. To want everything, everything the world has to offer."
     },
     {
-        id: 20,
+        id: 29,
         title: 'Every Breath',
         price: 200,
         image: 'https://gnbookstore.com.tm/storage/sm/pr/6vln2woMdW0U4wCGlQEh.jpg',
