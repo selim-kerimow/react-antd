@@ -8,6 +8,22 @@
     flex-direction: column;
 }
 
+.home-quote {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid darkgray;
+    margin-bottom: 30px;
+}
+.home-quote h3 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
 .trending-title {
     width: 100%;
     display: flex;
@@ -44,5 +60,8 @@
     }
     .trending-books {
         gap: 10px;
+    }
+    .home-quote {
+        font-size: 1rem;
     }
 }

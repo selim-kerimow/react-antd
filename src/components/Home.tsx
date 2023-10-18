@@ -9,6 +9,11 @@ const Home = () => {
 
     return (
         <div className="home">
+            <div className='home-quote'>
+                <h1 className='quote-text'>“Never trust anyone who has not brought a book with them.”</h1>
+                <h3 className='quote-author'>― Lemony Snicket</h3>
+            </div>
+
             <h1 className='trending-title'>Trending</h1>
             <div className='trending-books'>
                 { trending?.map(item => 

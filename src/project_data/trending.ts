@@ -2,6 +2,18 @@ import { IBook } from "./IBook";
 
 export const trending: IBook[] = [
     {
+        id: 39, 
+        title: 'The 100 - Rebellion', 
+        price: 120.00, 
+        image: 'https://gnbookstore.com.tm/storage/sm/pr/11053_1.jpg',
+        author: 'Kass Morgan', 
+        category: 'fantasy', 
+        language: 'English', 
+        barcode: 9780316435277, 
+        release: 2012,
+        description: "Centuries after nuclear war destroyed our planet, humanity struggles to rebuild. It’s been a month since the dropships landed and the Colonists joined the Hundred on the ground. The teens, once branded juvenile delinquents, are now leaders among their people.The Colonists and the Earthborns are celebrating their first holiday together when, to everyone’s horror, they’re attacked by a group of strangers whose unusual battle cries fill the air. The newcomers kill scores of people, seize prisoners, and pillage crucial supplies. When hotheaded Bellamy and his analytical girlfriend Clarke discover that Wells, Octavia and Glass have been captured, they vow to get them back at all costs. But as they go after their new enemies, Bellamy and Clarke find themselves increasingly at odds, unable to agree on a plan to save their friends."
+    },
+    {
         id: 28,
         title: 'Everything Everything',
         price: 250,
@@ -24,6 +36,18 @@ export const trending: IBook[] = [
         barcode: 9781572842625, 
         release: 2020,
         description: "Mark Zuckerberg: In His Own Words details the visionary thoughts and opinions of Facebook's founder entirely through direct quotations from Zuckerberg himself. It is an intimate and authoritative look at the man behind Facebook's once-in-a-generation success. This book serves up his most thought-provoking insights, as researched and chosen by George Beahm, the New York Times bestselling editor of I, Steve: Steve Jobs In His Own Words.Mark Zuckerberg: In His Own Words provides crucial illumination of Zuckerberg and the company he's created, emphasizing insights, business strategies, and lessons learned. It is essential reading for people who seek innovative solutions applicable to their business, regardless of size, and makes an ideal gift or reference item for anyone interested in this American business icon."
+    },
+    {
+        id: 34, 
+        title: 'Оно', 
+        price: 200.00, 
+        image: 'https://gnbookstore.com.tm/storage/sm/pr/sr3D44EVImolvpYDX7gI.jpg',
+        author: 'Стивен Кинг', 
+        category: 'fantasy', 
+        language: 'Russian', 
+        barcode: 9781572892915, 
+        release: 2010,
+        description: "В маленьком провинциальном городке Дерри много лет назад семерым подросткам пришлось столкнуться с кромешным ужасом — живым воплощением ада. Прошли годы... Подростки повзрослели, и ничто, казалось, не предвещало новой беды. Но кошмар прошлого вернулся, неведомая сила повлекла семерых друзей назад, в новую битву со Злом. Ибо в Дерри опять льется кровь и бесследно исчезают люди. Ибо вернулось порождение ночного кошмара, настолько невероятное, что даже не имеет имени..."
     },
     {
         id: 27,
