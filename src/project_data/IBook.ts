@@ -3,7 +3,7 @@ export interface IBook {
     title: string,
     price: number,
     image: string,
-    category: string,
+    category?: string,
     language: string,
     barcode: number,
     release: number,

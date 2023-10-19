@@ -1,0 +1,16 @@
+.magazines {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 530px) {
+    .magazines {
+        width: 95%;
+        gap: 10px;
+    }
+}
