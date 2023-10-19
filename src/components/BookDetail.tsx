@@ -1,13 +1,22 @@
 import { useCookies } from 'react-cookie'
 import '../css/bookDetail.css'
-import { Button, Image } from 'antd'
+import { Button, Image, message } from 'antd'
 import { BsCart4 } from 'react-icons/bs'
+import { useActions } from '../store/hooks'
 
 
 
 const BookDetail: React.FC = () => {
 
+    const { addProduct } = useActions()
+
     const [cookie] = useCookies()
+
+    const cartAddHandler = (e: React.MouseEvent<HTMLElement>) => {
+        e.preventDefault()
+        addProduct(cookie.selectedBook)
+        message.success('Successfully added!')
+    }
 
     return (
         <div className="detail">
@@ -28,7 +37,7 @@ const BookDetail: React.FC = () => {
                 </div>
                 <div className='detail-low'>
                     <p> {cookie.selectedBook.price} TMT</p>
-                    <Button type='primary' danger className='detail-button'> 
+                    <Button type='primary' danger className='detail-button' onClick={cartAddHandler}> 
                         <BsCart4 size={16} style={{ marginRight: 3}}/>Cart
                     </Button>
                 </div>
