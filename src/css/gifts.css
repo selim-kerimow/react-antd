@@ -1,4 +1,4 @@
-.magazines {
+.gifts {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 530px) {
-    .magazines {
+    .gifts {
         width: 95%;
         gap: 10px;
     }
