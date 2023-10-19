@@ -1,4 +1,6 @@
 import '../css/home.css'
+import { newBooks } from '../project_data/new'
+import { popular } from '../project_data/popular'
 import { trending } from '../project_data/trending'
 import BookCard from './BookCard'
 
@@ -21,7 +23,14 @@ const Home = () => {
 
             <h1 className='new-title'>New</h1>
             <div className='new-books'>
-                { trending?.map(item => 
+                { newBooks?.map(item => 
+                    <BookCard book={item} key={item.id} budge='Trending'/>             
+                    )}                
+            </div>
+
+            <h1 className='new-title'>Popular</h1>
+            <div className='new-books'>
+                { popular?.map(item => 
                     <BookCard book={item} key={item.id} budge='Trending'/>             
                     )}                
             </div>
