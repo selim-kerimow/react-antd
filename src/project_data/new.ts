@@ -1,11 +1,20 @@
 import { IBook } from "./IBook";
 
+//images
+import MyDark from '../images/romance/MyDark.jpg'
+import ItEndsWithUs from '../images/romance/ItEndsWithUs.jpg'
+import TheHasel from '../images/fantsy/TheHasel.jpg'
+import Unravel from '../images/fantsy/Unravel.jpg'
+import TomHanks from '../images/biography/TomHenks.jpg'
+import Swift from '../images/biography/Swift.jpg'
+
+
 export const newBooks: IBook[] = [
     {
         id: 5, 
         title: 'Taylor Swift', 
         price: 100.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/Y0PP6ewL1l3Os0rmlVnC.jpg',
+        image: Swift,
         author: 'Helena Hunt', 
         category: 'biography', 
         language: 'English', 
@@ -17,7 +26,7 @@ export const newBooks: IBook[] = [
         id: 23,
         title: 'My dark Vanessa',
         price: 200,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/RMoFmIzdnE7YLh9U3ChL.jpg',
+        image: MyDark,
         author: 'Kate Elizabeth Russel',
         category: 'romance',
         language: 'English',
@@ -29,7 +38,7 @@ export const newBooks: IBook[] = [
         id: 30, 
         title: 'Unravel Me', 
         price: 400.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/IQcUmSS16L.jpg',
+        image: Unravel,
         author: 'Taheren Mafi', 
         category: 'fantasy', 
         language: 'English', 
@@ -41,7 +50,7 @@ export const newBooks: IBook[] = [
         id: 27,
         title: 'It Ends With Us',
         price: 120,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/10092_1.jpg',
+        image: ItEndsWithUs,
         author: 'Colleen Hoover',
         category: 'romance',
         language: 'English',
@@ -53,7 +62,7 @@ export const newBooks: IBook[] = [
         id: 1, 
         title: 'Том Хенкс', 
         price: 300.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/xbsbRzO79CCBIOjWdsX2.jpg', 
+        image: TomHanks, 
         author: 'Том Хэнкс', 
         category: 'biography', 
         language: 'Russian',
@@ -65,7 +74,7 @@ export const newBooks: IBook[] = [
         id: 38, 
         title: 'The Hazel Wood', 
         price: 105.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/11425_1.jpg',
+        image: TheHasel,
         author: 'Melissa Albert', 
         category: 'fantasy', 
         language: 'English', 

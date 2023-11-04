@@ -1,11 +1,27 @@
 import { IBook } from "./IBook";
 
+// images
+import Lovets from '../images/fantsy/Lovets.jpg'
+import Assasin1 from '../images/fantsy/Assasin1.jpg'
+import Assasin2 from '../images/fantsy/Assasin2.jpg'
+import Dengi1 from '../images/fantsy/Dengi.jpg'
+import Dengi2 from '../images/fantsy/Dengi2.jpg'
+import Doctor from '../images/fantsy/Doctor.jpg'
+import Dorojniye from '../images/fantsy/Dorojnye.jpg'
+import Igra from '../images/fantsy/Igra.jpg'
+import Ono from '../images/fantsy/Ono.jpg'
+import Unravel from '../images/fantsy/Unravel.jpg'
+import The100 from '../images/fantsy/The100.jpg'
+import TheHasel from '../images/fantsy/TheHasel.jpg'
+
+
+
 export const fantasy: IBook[] = [
     {
         id: 39, 
         title: 'The 100 - Rebellion', 
         price: 120.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/11053_1.jpg',
+        image: The100,
         author: 'Kass Morgan', 
         category: 'fantasy', 
         language: 'English', 
@@ -17,7 +33,7 @@ export const fantasy: IBook[] = [
         id: 30, 
         title: 'Unravel Me', 
         price: 400.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/IQcUmSS16L.jpg',
+        image: Unravel,
         author: 'Taheren Mafi', 
         category: 'fantasy', 
         language: 'English', 
@@ -29,7 +45,7 @@ export const fantasy: IBook[] = [
         id: 31, 
         title: 'Деньги на бочку! Том 1', 
         price: 160.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/JEqtvHZWJE.jpg',
+        image: Dengi1,
         author: 'Малиса Лин', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -41,7 +57,7 @@ export const fantasy: IBook[] = [
         id: 32, 
         title: 'Деньги на бочку! Том 2', 
         price: 160.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/SRUmLBmS3E.jpg',
+        image: Dengi2,
         author: 'Малиса Лин', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -53,7 +69,7 @@ export const fantasy: IBook[] = [
         id: 33, 
         title: 'Доктор Сон', 
         price: 135.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/Ei22Y6dt71yxWNuHv0Ru.jpg',
+        image: Doctor,
         author: 'Стивен Кинг', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -65,7 +81,7 @@ export const fantasy: IBook[] = [
         id: 34, 
         title: 'Оно', 
         price: 200.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/sr3D44EVImolvpYDX7gI.jpg',
+        image: Ono,
         author: 'Стивен Кинг', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -77,7 +93,7 @@ export const fantasy: IBook[] = [
         id: 35, 
         title: 'Дорожные работы', 
         price: 180.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/SZednGP91TjZnr151qdY.jpg',
+        image: Dorojniye,
         author: 'Стивен Кинг', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -89,7 +105,7 @@ export const fantasy: IBook[] = [
         id: 36, 
         title: 'Ловец снов', 
         price: 150.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/v6g0viJJfVL5UKYWxGLe.jpg',
+        image: Lovets,
         author: 'Стивен Кинг', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -101,7 +117,7 @@ export const fantasy: IBook[] = [
         id: 37, 
         title: 'Игра Джералда', 
         price: 110.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/ZW39BUTTe7K0EIqugrcp.jpg',
+        image: Igra,
         author: 'Стивен Кинг', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -113,7 +129,7 @@ export const fantasy: IBook[] = [
         id: 38, 
         title: 'The Hazel Wood', 
         price: 105.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/11425_1.jpg',
+        image: TheHasel,
         author: 'Melissa Albert', 
         category: 'fantasy', 
         language: 'English', 
@@ -125,7 +141,7 @@ export const fantasy: IBook[] = [
         id: 40, 
         title: "Assassin's creed Black Flag", 
         price: 120.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/ujHzxTTBpD50zCaZbBCn.jpg',
+        image: Assasin1,
         author: 'Oliver Browden', 
         category: 'fantasy', 
         language: 'English', 
@@ -137,7 +153,7 @@ export const fantasy: IBook[] = [
         id: 4, 
         title: "Assassin's creed Unity", 
         price: 120.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/tMCSAXZWWsWw2X2jLnih.jpg',
+        image: Assasin2,
         author: 'Oliver Browden', 
         category: 'fantasy', 
         language: 'English', 

@@ -1,12 +1,17 @@
 import { IBook } from "./IBook";
 import '../css/magazines.css'
 
+import magazine1 from '../images/magazines/magazine1.jpg'
+import magazine2 from '../images/magazines/magazine2.jpg'
+import magazine3 from '../images/magazines/magazine3.jpg'
+import magazine4 from '../images/magazines/magazine4.jpg'
+
 export const magazines: IBook[] = [
     {
         id: 40,
         title: 'Talking Tom and friends зимние фантазии',
         price: 120,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/12200_1.jpg',
+        image: magazine1,
         author: 'Комсомольская правда',
         barcode: 4620016296714,
         language: 'Russian',
@@ -18,7 +23,7 @@ export const magazines: IBook[] = [
         id: 41,
         title: 'ELLE Левый берег Vs Правый берег',
         price: 90,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/10897_1.jpg',
+        image: magazine2,
         author: 'Комсомольская правда',
         barcode: 9771560318003,
         language: 'Russian',
@@ -29,7 +34,7 @@ export const magazines: IBook[] = [
         id: 42,
         title: 'Зарулём',
         price: 90,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/10344_1.jpg',
+        image: magazine3,
         author: 'Вячеслав Гудков',
         barcode: 9770321424007,
         language: 'Russian',
@@ -40,7 +45,7 @@ export const magazines: IBook[] = [
         id: 43,
         title: 'Вокруг света',
         price: 110,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/10275_1.jpg',
+        image: magazine4,
         author: 'Вячеслав Гудков',
         barcode: 4620002390013,
         language: 'Russian',

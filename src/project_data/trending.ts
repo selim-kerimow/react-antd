@@ -1,11 +1,20 @@
 import { IBook } from "./IBook";
 
+// images 
+import The100 from '../images/fantsy/The100.jpg'
+import Ono from '../images/fantsy/Ono.jpg'
+import Mark from '../images/biography/Mark.jpg'
+import Bill from '../images/biography/Bill.jpg'
+import Everything from '../images/romance/Everything.jpg'
+import ItEndsWithUs from '../images/romance/ItEndsWithUs.jpg'
+
+
 export const trending: IBook[] = [
     {
         id: 39, 
         title: 'The 100 - Rebellion', 
         price: 120.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/11053_1.jpg',
+        image: The100,
         author: 'Kass Morgan', 
         category: 'fantasy', 
         language: 'English', 
@@ -17,7 +26,7 @@ export const trending: IBook[] = [
         id: 28,
         title: 'Everything Everything',
         price: 250,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/11155_1.jpg',
+        image: Everything,
         author: 'Nicola Yoon',
         category: 'romance',
         language: 'English',
@@ -29,7 +38,7 @@ export const trending: IBook[] = [
         id: 2, 
         title: 'Mark Zuckerberg', 
         price: 100.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/1rVCsG5xPzoXFF18cocX.jpg',
+        image: Mark,
         author: 'Mark Zuckerberg', 
         category: 'biography', 
         language: 'English', 
@@ -41,7 +50,7 @@ export const trending: IBook[] = [
         id: 34, 
         title: 'Оно', 
         price: 200.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/sr3D44EVImolvpYDX7gI.jpg',
+        image: Ono,
         author: 'Стивен Кинг', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -53,7 +62,7 @@ export const trending: IBook[] = [
         id: 27,
         title: 'It Ends With Us',
         price: 120,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/10092_1.jpg',
+        image: ItEndsWithUs,
         author: 'Colleen Hoover',
         category: 'romance',
         language: 'English',
@@ -65,7 +74,7 @@ export const trending: IBook[] = [
         id: 3, 
         title: 'Bill Gates', 
         price: 100.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/usBMIsRrtvKn3EeTw0NE.jpg',
+        image: Bill,
         author: 'Bill Gates', 
         category: 'biography', 
         language: 'English', 

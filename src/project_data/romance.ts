@@ -1,11 +1,25 @@
 import { IBook } from "./IBook";
 
+//images 
+import ItEndsWithUs from '../images/romance/ItEndsWithUs.jpg'
+import City from '../images/romance/City.jpg'
+import AllThisTime from '../images/romance/AllThisTime.jpg'
+import EveryBreath from '../images/romance/EveryBreath.jpg'
+import Lyubow from '../images/romance/Lyubow.jpg'
+import MyDark from '../images/romance/MyDark.jpg'
+import NaBeregu from '../images/romance/NaBeregu.jpg'
+import Pismo from '../images/romance/Pismo.jpg'
+import Speshi from '../images/romance/Speshi.jpg'
+import Tihaya from '../images/romance/Tihaya.jpg'
+import Vinovaty from '../images/romance/Vinovaty.jpg'
+import Everything from '../images/romance/Everything.jpg'
+
 export const romance: IBook[] = [
     {
         id: 18, 
         title: 'City of Girls', 
         price: 200.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/32Ele9xW8M.jpg',
+        image: City,
         author: 'Elizabeth Gilbert', 
         category: 'romance', 
         language: 'English', 
@@ -17,7 +31,7 @@ export const romance: IBook[] = [
         id: 19, 
         title: 'All This Time', 
         price: 120.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/jofOUbnqBq0oqqgza9fE.jpg',
+        image: AllThisTime,
         author: 'Elizabeth Gilbert', 
         category: 'romance', 
         language: 'English', 
@@ -29,7 +43,7 @@ export const romance: IBook[] = [
         id: 20,
         title: 'Тихая гавань',
         price: 110,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/OvqZig4bPCbsI8SehwBs.jpg',
+        image: Tihaya,
         author: 'Николас Спаркс',
         category: 'romance',
         language: 'Russian',
@@ -41,7 +55,7 @@ export const romance: IBook[] = [
         id: 21,
         title: 'Письмо незнакомки',
         price: 110,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/svfTLEvEaHfM2rUNBYlV.jpg',
+        image: Pismo,
         author: 'Стефан Цвейг',
         category: 'romance',
         language: 'Russian',
@@ -53,7 +67,7 @@ export const romance: IBook[] = [
         id: 22,
         title: 'Спеши любить',
         price: 220,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/2hMCEAOPniWeScZJnIDk.jpg',
+        image: Speshi,
         author: 'Николас Спаркс',
         category: 'romance',
         language: 'Russian',
@@ -65,7 +79,7 @@ export const romance: IBook[] = [
         id: 23,
         title: 'My dark Vanessa',
         price: 200,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/RMoFmIzdnE7YLh9U3ChL.jpg',
+        image: MyDark,
         author: 'Kate Elizabeth Russel',
         category: 'romance',
         language: 'English',
@@ -77,7 +91,7 @@ export const romance: IBook[] = [
         id: 24,
         title: 'Любовь во время чумы',
         price: 170,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/NzTIzUxuoM.jpg',
+        image: Lyubow,
         author: 'Гарсиа Маркес Габриэль',
         category: 'romance',
         language: 'Russian',
@@ -89,7 +103,7 @@ export const romance: IBook[] = [
         id: 25,
         title: 'На берегу Рио-Пьедра села я и заплакала',
         price: 150,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/aqZgLTFMURhx3mcAGHQG.jpg',
+        image: NaBeregu,
         author: 'Пауло Коэльо',
         category: 'romance',
         language: 'Russian',
@@ -101,7 +115,7 @@ export const romance: IBook[] = [
         id: 26,
         title: 'Виноваты звёзды',
         price: 200,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/10271_1.jpg',
+        image: Vinovaty,
         author: 'John Green',
         category: 'romance',
         language: 'Russian',
@@ -113,7 +127,7 @@ export const romance: IBook[] = [
         id: 27,
         title: 'It Ends With Us',
         price: 120,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/10092_1.jpg',
+        image: ItEndsWithUs,
         author: 'Colleen Hoover',
         category: 'romance',
         language: 'English',
@@ -125,7 +139,7 @@ export const romance: IBook[] = [
         id: 28,
         title: 'Everything Everything',
         price: 250,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/11155_1.jpg',
+        image: Everything,
         author: 'Nicola Yoon',
         category: 'romance',
         language: 'English',
@@ -137,7 +151,7 @@ export const romance: IBook[] = [
         id: 29,
         title: 'Every Breath',
         price: 200,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/6vln2woMdW0U4wCGlQEh.jpg',
+        image: EveryBreath,
         author: 'Nicholas Sparks',
         category: 'romance',
         language: 'Russian',

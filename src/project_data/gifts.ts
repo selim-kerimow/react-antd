@@ -1,11 +1,20 @@
 import { IBook } from "./IBook";
 
+//images
+import gift1 from '../images/gifts/gift1.jpg'
+import gift2 from '../images/gifts/gift2.jpg'
+import gift3 from '../images/gifts/gift3.jpg'
+import gift4 from '../images/gifts/gift4.jpg'
+import gift5 from '../images/gifts/gift5.jpg'
+import gift6 from '../images/gifts/gift6.jpg'
+
+
 export const gifts: IBook[] = [
     {
         id: 44,
         title: 'Сказки А.С.Пушкина',
         price: 450,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/aT8TguCO5QfYQeGtzVdh.jpg',
+        image: gift1,
         author: 'А.С.Пушкин',
         language: 'Russian',
         barcode: 9785378288922,
@@ -17,7 +26,7 @@ export const gifts: IBook[] = [
         id: 45,
         title: '365 сказок на круглый год',
         price: 350,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/dp0thAIy6EYZIoZkrMdH.jpg',
+        image: gift2,
         author: 'РОСМЭН',
         language: 'Russian',
         barcode: 9785353080947,
@@ -29,7 +38,7 @@ export const gifts: IBook[] = [
         id: 47,
         title: 'Искусство войны',
         price: 800,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/9UGopyUJIdwKiQi5yJEP.jpg',
+        image: gift3,
         author: 'Сунь-Цзы',
         language: 'Russian',
         barcode: 9785170850082,
@@ -41,7 +50,7 @@ export const gifts: IBook[] = [
         id: 48,
         title: '21 урок для XXI века',
         price: 300,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/m2eU85rTfkvaEusGbXCS.jpg',
+        image: gift4,
         author: 'Юваль Ной Харари',
         language: 'Russian',
         barcode: 9785001311362,
@@ -53,7 +62,7 @@ export const gifts: IBook[] = [
         id: 49,
         title: 'The Witcher complete series',
         price: 800,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/KuIzHTlocSOw89z3DKWB.jpg',
+        image: gift5,
         author: 'Sapkowski Andrzej Wiedźmin',
         language: 'English',
         barcode: 9780316438971,
@@ -65,7 +74,7 @@ export const gifts: IBook[] = [
         id: 50,
         title: 'Harry Potter The Complete Series Special Edition',
         price: 900,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/jDJTThNCeV.jpg',
+        image: gift6,
         author: 'J.K. Rowling',
         language: 'English',
         barcode: 9780545596275,

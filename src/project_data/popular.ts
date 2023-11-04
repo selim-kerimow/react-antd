@@ -1,11 +1,20 @@
 import { IBook } from "./IBook";
 
+//images
+import Obama from '../images/biography/Obama.jpg'
+import Jobs from '../images/biography/Jobs.jpg'
+import Igra from '../images/fantsy/Igra.jpg'
+import Lovets from '../images/fantsy/Lovets.jpg'
+import Lyubow from '../images/romance/Lyubow.jpg'
+import Vinovaty from '../images/romance/Vinovaty.jpg'
+
+
 export const popular: IBook[] = [
     {
         id: 9,
         title: 'Barack Obama', 
         price: 500.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/11864_1.jpg',
+        image: Obama,
         author: 'Barack Obama', 
         category: 'biography', 
         language: 'English', 
@@ -17,7 +26,7 @@ export const popular: IBook[] = [
         id: 37, 
         title: 'Игра Джералда', 
         price: 110.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/ZW39BUTTe7K0EIqugrcp.jpg',
+        image: Igra,
         author: 'Стивен Кинг', 
         category: 'fantasy', 
         language: 'Russian', 
@@ -29,7 +38,7 @@ export const popular: IBook[] = [
         id: 26,
         title: 'Виноваты звёзды',
         price: 200,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/10271_1.jpg',
+        image: Vinovaty,
         author: 'John Green',
         category: 'romance',
         language: 'Russian',
@@ -40,7 +49,7 @@ export const popular: IBook[] = [
     {
         id: 6, title: 'Steve Jobs', 
         price: 800.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/fL24xahYAWqzjL9lnBOM.jpg',
+        image: Jobs,
         author: 'Walter Isaacson', 
         category: 'biography', 
         language: 'English', 
@@ -52,7 +61,7 @@ export const popular: IBook[] = [
         id: 24,
         title: 'Любовь во время чумы',
         price: 170,
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/NzTIzUxuoM.jpg',
+        image: Lyubow,
         author: 'Гарсиа Маркес Габриэль',
         category: 'romance',
         language: 'Russian',
@@ -64,7 +73,7 @@ export const popular: IBook[] = [
         id: 36, 
         title: 'Ловец снов', 
         price: 150.00, 
-        image: 'https://gnbookstore.com.tm/storage/sm/pr/v6g0viJJfVL5UKYWxGLe.jpg',
+        image: Lovets,
         author: 'Стивен Кинг', 
         category: 'fantasy', 
         language: 'Russian', 
